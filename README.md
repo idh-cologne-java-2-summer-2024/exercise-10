@@ -7,7 +7,7 @@ Fortgeschrittene Programmierung (Java 2)
 Klonen Sie dieses Repository direkt in Eclipse und importieren Sie das Maven-Projekt. Legen Sie einen neuen Branch an, den Sie nach Ihrem GitHub-Benutzernamen benennen.
 
 
-## Aufgabe
+## Aufgabe 1
 
 In der Klasse `idh.java.ATM` finden Sie eine vereinfachte Version des Geldautomaten, den wir früher schonmal gesehen haben. Der Automat kennt jetzt keine Banken oder Kontos mehr, sondern gibt nur noch die passende Stückelung an Scheinen für einen Betrag aus. Dies passiert in der Methode `convertToBills(int amount)`, die ein `int[]` zurückliefert. Verstehen Sie zunächst wie diese Methode funktioniert. 
 
@@ -20,6 +20,10 @@ Das korrekte Verhalten ist das folgende:
 - Bei Eingabe einer negativen Zahl wird ein Array mit Nullen zurückgegeben.
 
 - Bei Eingabe einer Zahl die nicht durch fünf teilbar ist, wird eine Exception der Klasse `IllegalInputException` geworfen.
+
+## Aufgabe 2
+
+Das Semester neigt sich ja allmählich dem Ende zu, daher gibt es keine weitere Programmieraufgabe. Gehen Sie stattdessen Ihre Notizen, Aufzeichnungen und vergangene Übungen durch und stellen Sie sicher, dass Sie alles (wichtige) verstanden haben. Nutzen Sie die kommenden zwei Sitzungen um ggf. Lücken zu füllen und nochmal nachzufragen.
 
 
 ----
