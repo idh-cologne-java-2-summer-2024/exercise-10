@@ -9,7 +9,8 @@ public class ATM  {
 	// initial cash in the ATM
 	int cash = 100;
 		
-	int[] value_of_bills = new int[] {500,200,100, 50,20,10,5};
+	// Which banknotes do we have?
+	int[] value_of_bills = new int[] {500, 200, 100, 50, 20, 10, 5};
 
 	
 	/**
@@ -72,15 +73,21 @@ public class ATM  {
 	/**
 	 * Converts an amount to an array with the number of bills of each value. 
 	 * This function returns as few bills as possible, i.e., highest value first. 
-	 * (this is not popular in reality ...)
+	 * (this is not popular in reality ...).
 	 * @param amount
 	 * @return
 	 * @throws IllegalInputException 
 	 */
 	protected int[] convertToBills(int amount) throws IllegalInputException {
+		// illegal amount
 		if (amount < 0)
 			return new int[] {0,0,0,0,0,0,0};
+		
+		// return array for the different bill types
 		int[] r = new int[7];
+		
+		// iterate over the possible pill types
+		// order is important here! Need to go from largest to smallest.
 		for (int i = 0;  i < value_of_bills.length; i++) {
 			r[i] = amount / value_of_bills[i];
 			amount = amount % value_of_bills[i];		
