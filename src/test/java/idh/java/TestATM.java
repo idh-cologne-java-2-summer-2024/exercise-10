@@ -23,16 +23,25 @@ public class TestATM {
 		assertArrayEquals(new int[] {20,0,0,0,0,0,1}, atm.convertToBills(10005));
 		assertArrayEquals(new int[] {0,0,0,1,1,1,0}, atm.convertToBills(80));
 		assertArrayEquals(new int[] {0,0,1,0,1,0,0}, atm.convertToBills(120));
+		
+		// largest integer divisible by 5
+		assertArrayEquals(new int[] {4294967,0,1,0,2,0,1}, atm.convertToBills(Integer.MAX_VALUE-2));
 	}
 	
 	@Test
 	void testConvertToBillsInputZero() {
 		assertThrows(IllegalInputException.class,  () -> atm.convertToBills(7));
+		
+		// largest integer
+		assertThrows(IllegalInputException.class,  () -> atm.convertToBills(Integer.MAX_VALUE));
 	}
 
 	@Test
 	void testConvertToBillsInputNegative() throws IllegalInputException {
 		assertArrayEquals(new int[] {0,0,0,0,0,0,0}, atm.convertToBills(-5));
+		
+		// smallest integer
+		assertArrayEquals(new int[] {0,0,0,0,0,0,0}, atm.convertToBills(Integer.MIN_VALUE));
 	}
 
 }
