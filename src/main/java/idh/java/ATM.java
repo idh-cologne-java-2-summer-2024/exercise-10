@@ -63,7 +63,7 @@ public class ATM  {
 		for (i = 0; i < value_of_bills.length-1; i++) {
 			b.append(bills[i]).append(" ").append(value_of_bills[i]).append("s, ");
 		}
-		b.append(" and ").append(bills[i]).append(" ").append(value_of_bills[i]);
+		b.append(" and ").append(bills[i]).append(" ").append(value_of_bills[i]).append("s.");
 		System.out.println(b.toString());
 
 		cash += amount;
