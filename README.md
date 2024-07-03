@@ -1,7 +1,7 @@
 Fortgeschrittene Programmierung (Java 2)
 
 
-# Übung 11
+# Übung 10
 
 
 Klonen Sie dieses Repository direkt in Eclipse und importieren Sie das Maven-Projekt. Legen Sie einen neuen Branch an, den Sie nach Ihrem GitHub-Benutzernamen benennen.
@@ -23,7 +23,7 @@ Das korrekte Verhalten ist das folgende:
 
 ## Aufgabe 2
 
-Das Semester neigt sich ja allmählich dem Ende zu, daher gibt es keine weitere Programmieraufgabe. Gehen Sie stattdessen Ihre Notizen, Aufzeichnungen und vergangene Übungen durch und stellen Sie sicher, dass Sie alles (wichtige) verstanden haben. Nutzen Sie die kommenden zwei Sitzungen um ggf. Lücken zu füllen und nochmal nachzufragen.
+Das Semester neigt sich ja allmählich dem Ende zu, daher gibt es keine weitere Programmieraufgabe. Gehen Sie stattdessen Ihre Notizen, Aufzeichnungen und vergangenen Übungen durch und stellen Sie sicher, dass Sie alles (wichtige) verstanden haben. Nutzen Sie die kommende Sitzung um ggf. nochmal nachzufragen.
 
 
 ----
