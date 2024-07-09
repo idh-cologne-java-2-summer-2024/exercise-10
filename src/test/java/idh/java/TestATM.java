@@ -33,6 +33,11 @@ public class TestATM {
         assertArrayEquals(expected, atm.convertToBills(0));
     }
 
+    @Test public void testDivideBy5_4() throws ATM.IllegalInputException {
+        int[] expected = new int[]{100,0,0,0,0,0,0};
+        assertArrayEquals(expected, atm.convertToBills(50000));
+    }
+
     /*
     Bei Eingabe einer negativen Zahl wird ein Array mit Nullen zurückgegeben.
      */
@@ -55,7 +60,15 @@ public class TestATM {
     Bei Eingabe einer Zahl, die nicht durch fünf teilbar ist, wird eine Exception der Klasse IllegalInputException
     geworfen.
      */
-    @Test public void testIllegalInputException() {
-        assertThrows(IllegalInputException.class, () -> atm.convertToBills(2));
+    @Test public void testIllegalInputException_1() {
+        assertThrows(ATM.IllegalInputException.class, () -> atm.convertToBills(1));
+    }
+
+    @Test public void testIllegalInputException_2() {
+        assertThrows(ATM.IllegalInputException.class, () -> atm.convertToBills(9999));
+    }
+
+    @Test public void testIllegalInputException_3() {
+        assertThrows(ATM.IllegalInputException.class, () -> atm.convertToBills(999999999));
     }
 }
