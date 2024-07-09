@@ -78,7 +78,7 @@ public class ATM  {
 	 * @return
 	 * @throws IllegalInputException 
 	 */
-	protected int[] convertToBills(int amount) throws IllegalInputException {
+	public int[] convertToBills(int amount) throws IllegalInputException {
 		// illegal amount
 		if (amount < 0)
 			return new int[] {0,0,0,0,0,0,0};
@@ -107,7 +107,7 @@ public class ATM  {
 		atm.run();
 	};
 	
-	class IllegalInputException extends Exception {
+	public class IllegalInputException extends Exception {
 
 		private static final long serialVersionUID = 1L;
 		
