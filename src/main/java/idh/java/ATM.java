@@ -78,7 +78,7 @@ public class ATM  {
 	 * @return
 	 * @throws IllegalInputException 
 	 */
-	protected int[] convertToBills(int amount) throws IllegalInputException {
+	public int[] convertToBills(int amount) throws IllegalInputException {
 		// illegal amount
 		if (amount < 0)
 			return new int[] {0,0,0,0,0,0,0};
